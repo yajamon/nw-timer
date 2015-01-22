@@ -43,6 +43,10 @@ module.exports = function (grunt) {
                 src: ['**/*.html'],
                 dest: 'build/',
             },
+            nw: {
+                src: 'src/package.json',
+                dest: 'build/package.json'
+            }
         },
 
 
@@ -57,6 +61,6 @@ module.exports = function (grunt) {
     // tasks
     grunt.registerTask('less2css', ['less', 'csslint']);
     grunt.registerTask('ts2js', ['typescript', 'copy:js']);
-    grunt.registerTask('default', ['copy:html', 'less2css', 'ts2js']);
+    grunt.registerTask('default', ['copy:html', 'less2css', 'ts2js', 'copy:nw']);
 
 };
