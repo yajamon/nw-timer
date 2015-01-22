@@ -12,9 +12,17 @@ module.exports = function (grunt) {
                 ext: '.css'
             }
         }
+
+        csslint: {
+            lint: {
+                src: '<%= less.build.dest %>**/*.css'
+            }
+        },
+
     });
 
+    // load plugin
     grunt.loadNpmTasks('grunt-contrib-less');
-
+    grunt.loadNpmTasks('grunt-contrib-csslint');
 
 };
