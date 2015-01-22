@@ -56,5 +56,6 @@ module.exports = function (grunt) {
 
     // tasks
     grunt.registerTask('less2css', ['less', 'csslint']);
+    grunt.registerTask('ts2js', ['typescript', 'copy:js']);
 
 };
