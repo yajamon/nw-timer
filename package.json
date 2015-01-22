@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yajamon/nw-timer",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.0"
   }
 }
