@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yajamon/nw-timer/issues"
   },
-  "homepage": "https://github.com/yajamon/nw-timer"
+  "homepage": "https://github.com/yajamon/nw-timer",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
