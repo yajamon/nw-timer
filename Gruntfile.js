@@ -30,6 +30,21 @@ module.exports = function (grunt) {
             }
         },
 
+        copy: {
+            js: {
+                expand: true,
+                cwd: 'src/js/',
+                src: ['**/*.js'],
+                dest: 'build/js/',
+            },
+            html: {
+                expand: true,
+                cwd: 'src/',
+                src: ['**/*.html'],
+                dest: 'build/',
+            },
+        },
+
 
     });
 
@@ -37,6 +52,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-typescript');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // tasks
     grunt.registerTask('less2css', ['less', 'csslint']);
