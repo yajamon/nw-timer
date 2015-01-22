@@ -55,6 +55,24 @@ module.exports = function (grunt) {
             },
         },
 
+        watch: {
+            files: 'src/less/**/*.less',
+                tasks: ['less2css']
+            },
+            typescript: {
+                files: ['src/ts/**/*.ts'],
+                tasks: ['typescript:build'],
+            },
+            js: {
+                files: ['src/js/**/*.js'],
+                tasks: ['copy:js'],
+            }
+            html: {
+                files: 'src/**/*.html',
+                tasks: ['copy:html'],
+            },
+        }
+
     });
 
     // load plugin
@@ -63,6 +81,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-typescript');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // tasks
     grunt.registerTask('less2css', ['less', 'csslint']);
