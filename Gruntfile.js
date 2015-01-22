@@ -46,9 +46,14 @@ module.exports = function (grunt) {
             nw: {
                 src: 'src/package.json',
                 dest: 'build/package.json'
-            }
+            },
         },
 
+        clean: {
+            build: {
+                src:['build/*'],
+            },
+        },
 
     });
 
@@ -57,6 +62,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-typescript');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     // tasks
     grunt.registerTask('less2css', ['less', 'csslint']);
