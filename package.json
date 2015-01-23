@@ -1,0 +1,29 @@
+{
+  "name": "nw-timer",
+  "version": "0.0.1",
+  "description": "Timer. use NW.js",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://yajamon@github.com/yajamon/nw-timer.git"
+  },
+  "author": "yajamon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yajamon/nw-timer/issues"
+  },
+  "homepage": "https://github.com/yajamon/nw-timer",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-typescript": "^0.6.1",
+    "typescript": "^1.4.1"
+  }
+}
