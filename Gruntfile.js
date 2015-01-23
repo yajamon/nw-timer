@@ -72,7 +72,7 @@ module.exports = function (grunt) {
                 files: 'src/**/*.html',
                 tasks: ['copy:html'],
             },
-        }
+        },
 
     });
 
