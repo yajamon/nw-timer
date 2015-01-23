@@ -56,7 +56,8 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            files: 'src/less/**/*.less',
+            less: {
+                files: 'src/less/**/*.less',
                 tasks: ['less2css']
             },
             typescript: {
@@ -66,7 +67,7 @@ module.exports = function (grunt) {
             js: {
                 files: ['src/js/**/*.js'],
                 tasks: ['copy:js'],
-            }
+            },
             html: {
                 files: 'src/**/*.html',
                 tasks: ['copy:html'],
