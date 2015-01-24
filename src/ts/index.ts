@@ -1,3 +1,6 @@
+/// <reference path="../../typings/jquery/jquery.d.ts" />
+
+
 var fps = 30;
 var frameTime = 1000 / 30;
 var timer_id = null;
