@@ -1,7 +1,10 @@
+/// <reference path="../../typings/jquery/jquery.d.ts" />
+
+
 var fps = 30;
 var frameTime = 1000 / 30;
-var timer_id = null;
-var target_time = null;
+var timer_id:number = null;
+var target_time:Date = null;
 
 $(function(){
     $('div.buttons').on('click', '.button', function (evt) {
@@ -32,7 +35,7 @@ $(function(){
     });
 });
 
-function writeTimer (time) {
+function writeTimer (time:number) {
     var date = new Date(time);
     // var hour = date.getHours() + (date.getTimezoneOffset() / 60);
     var min = date.getMinutes();
@@ -40,5 +43,5 @@ function writeTimer (time) {
     var msec = date.getMilliseconds();
     var timer_string = /*hour+':'+*/min+':'+sec+'.'+msec;
 
-    $(".timer_string").text(timer_string);
+    $(".timer_string").html(timer_string);
 }
