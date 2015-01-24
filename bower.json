@@ -1,0 +1,21 @@
+{
+  "name": "nw-timer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yajamon/nw-timer",
+  "authors": [
+    "yajamon <yajamon.tatsuki@gmail.com>"
+  ],
+  "description": "Timer. use NW.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~2.1.0"
+  }
+}

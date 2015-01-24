@@ -32,3 +32,6 @@ build
 
 # DefinitelyTyped
 typings
+
+# Bower
+bower_components
