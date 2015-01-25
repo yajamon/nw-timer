@@ -24,6 +24,7 @@
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-typescript": "^0.6.1",
+    "testem": "^0.6.32",
     "typescript": "^1.4.1"
   }
 }
