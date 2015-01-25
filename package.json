@@ -4,7 +4,7 @@
   "description": "Timer. use NW.js",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/testem/testem.js ci"
   },
   "repository": {
     "type": "git",
