@@ -1,5 +1,5 @@
 {
-  "root": "src/ts/index.ts",
+  "root": "ts/test.ts",
   "settings": {
     "auto_complete": true,
     "build_on_save": false,
