@@ -1,6 +1,15 @@
 {
     "framework": "mocha",
 
+    "src_files":[
+        "src/**/*.ts",
+        "test/src/**/*.ts"
+    ],
+    "serve_files":[
+        "build/**/*.js",
+        "test/build/**/*.js"
+    ],
+
     "launch_in_ci": [
         "PhantomJS"
     ]
